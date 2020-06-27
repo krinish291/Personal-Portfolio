@@ -14,6 +14,8 @@
     color: #ec1839;
 }
 
+.project .project-title,
+.project .project-item .project-item-inner .project-pill,
 .about .about-content .timeline .circle-dot,
 .about .about-content .timeline-items::before,
 .btn,

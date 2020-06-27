@@ -3,7 +3,7 @@
  @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
  /*Google fonts*/
  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Rubik:300,500,700,900&display=swap');
 
 /*  General Style*/
 body{
@@ -486,4 +486,90 @@ margin-right: 8px;
     line-height: 25px;
     color: #504e70;
     margin: 0px
+}
+
+/* projects */
+.project .project-title{
+    
+    text-align: center;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 500;
+    padding: 6px 17px; 
+    color: #ffffff;
+    border-radius:40px ;
+    display: inline-block;
+}
+
+.project .project-item .project-item-inner .project-pill{
+    text-align: center;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 300;
+    padding: 6px 17px; 
+    color: #ffffff;
+    border-radius:40px ;
+    display: inline-block;
+    margin: 5px;
+}
+.project .project-item .project-item-inner .project-git{
+    text-align: center;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 300;
+    padding: 6px 17px; 
+    color: #ffffff;
+    border-radius:40px ;
+    display: inline-block;
+    margin: 5px;
+    background-color: #302e4d;
+}
+
+.project  .container{
+    padding-bottom:40px ;
+}
+
+.project .project-item{
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.project .project-item .project-item-inner{
+    background-color: #fdf9ff;
+    border: 1px solid #d4d4e3;
+    border-radius: 10px;
+    padding: 30px 15px;
+    
+}
+
+.project .project-item .project-item-inner h4{
+    text-align: center;
+    font-size :24px;
+     margin-bottom: 30px; 
+    font-weight: 700;
+    color: #302e4d;
+}
+
+.project .project-item .project-item-inner p{
+    text-align:justify;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right:10px;
+    color: #504e70;
+}
+
+.project .project-item .project-item-inner strong{
+    text-align:left;
+    margin-top: 30px;
+    
+    padding-left: 10px;
+    padding-right:10px;
+    color: #302e4d;
 }
