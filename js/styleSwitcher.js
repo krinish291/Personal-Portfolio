@@ -18,8 +18,8 @@ function setActiveStyle(color) {
  const bodySkin=document.querySelectorAll(".body-skin"),
     totalBodySkin=bodySkin.length;
     console.log(bodySkin);
-   for(let i=0;i<totalLinks;i++){
-        bodySkin[i].addEventListener("change",function(){
+    for(const bodySkinitem of bodySkin){
+        bodySkinitem.addEventListener("change",function(){
             
             if (this.value ==="dark"){
                 document.body.className="dark";

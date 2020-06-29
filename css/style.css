@@ -28,6 +28,48 @@ body{
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    position:fixed;
+    left:270px;
+    top:0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: all 0.3s ease;
+    transition :  all 0.3s ease;
+}
+.section.back-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    -webkit-animation: slidesection 1s ease;
+    animation: slidesection 1s ease;
+}
+@-webkit-keyframes slidesection{
+    0%{
+        -webkit-transform:translateX(100%);
+        transform:translateX(100%);
+    }
+    100%{
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
+}
+
+@keyframes slidesection{
+    0%{
+        -webkit-transform:translateX(100%);
+        transform:translateX(100%);
+    }
+    100%{
+        -webkit-transform:translateX(0%);
+        transform:translateX(0%);
+    }
 }
 
 input,textarea,select{
@@ -130,6 +172,60 @@ input,textarea,select{
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
 
+/*preloader */
+.preloader{
+    background-color: #222222;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 150;
+    display:-ms-flexbox;
+    display: flex;
+    -web-align-items: center;
+    align-items: center;
+   -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.preloader.opacity-0{
+    opacity: 0;
+}
+
+.preloader .loader{
+    height: 60px;
+    width: 60px;
+    border:4px solid #e3e3e3;
+    border-radius: 50%;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes spin{
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
 
  /* Aside */
 .aside{
@@ -142,6 +238,8 @@ input,textarea,select{
     z-index: 10;
     border-right:1px solid #e8dfec ;
     padding: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition :  all 0.3s ease;
 
 }
 .aside .logo{ 
@@ -186,7 +284,7 @@ input,textarea,select{
     cursor: pointer;
     position: fixed;
     left: 300px;
-    top:30px;
+    top:20px;
     z-index: 11;
     border-radius: 5px;
     background-color: #fdf9ff;
@@ -197,6 +295,8 @@ input,textarea,select{
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    transition :  all 0.3s ease;
 }
 
 .aside .nav-toggler span{
@@ -204,6 +304,9 @@ input,textarea,select{
     width: 16px;
     display: inline-block;
     position: relative;
+}
+.aside .nav-toggler.open span{
+    background-color: transparent;
 }
 
 .aside .nav-toggler span::before{
@@ -214,7 +317,11 @@ input,textarea,select{
     top:-6px;
     left: 0;
 }
-
+.aside .nav-toggler.open span::before{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top:0;
+}
 .aside .nav-toggler span::after{
     content: '';
     height: 2px;
@@ -222,6 +329,11 @@ input,textarea,select{
     position: absolute;
     top:6px;
     left: 0;
+}
+.aside .nav-toggler.open span::after{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top:0;
 }
 
 .aside .nav{
@@ -710,12 +822,29 @@ body.dark .aside .nav li a{
 
 /* Respontive */
 @media(max-width:1199px){
-        /* .aside{
-            left:-270px;
+        .section .container{
+            padding-top:70px;
         }
-        .main-content{
-            padding-left: 0;
-        } */
+        .aside .nav-toggler{
+           display: -ms-flexbox;
+           display:flex ;
+           left: 30px;
+        }
+        .aside .nav-toggler.open{
+            left:300px;
+        }
+        .aside {
+            left: -270px;
+        }
+        .aside.open{
+            left:0;
+        }
+        .section{
+            left: 0;
+        }
+        .section.open{
+            left:270px;
+        }
     .about .about-content .personal-info .project-item p span{
         display:block;
         margin-left:0 ;
