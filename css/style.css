@@ -452,6 +452,7 @@ margin-right: 8px;
     line-height: 25px;
     color: #504e70;
     margin: 0px;
+    text-align: justify;
 
 }
 
@@ -799,6 +800,7 @@ body.dark .aside .logo a,
 body.dark .aside .nav li a{
     color:#ffffff;
 }
+body.dark .about .about-content .timeline .medal p,
 body.dark .project .project-item .project-item-inner p,
 body.dark .about .about-content .timeline .timeline-text,
 body.dark .contact .contact-info-item p,
