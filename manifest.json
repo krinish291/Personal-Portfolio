@@ -1,23 +1,62 @@
 {
-    "dir": "ltr",
-    "lang": "en",
     "name": "Krinish Radadiya",
     "short_name": "Krinish Radadiya",
-    "scope": "/",
     "display": "standalone",
-    "start_url": "https://krinish291.github.io/",
-    "background_color": "transparent",
-    "theme_color": "transparent",
+    "start_url": "/index.html",
+    "background_color": "#ffe9D2",
+    "theme_color": "#ffe1c4",
     "description": "",
-    "orientation": "any",
-    "related_applications": [],
-    "prefer_related_applications": false,
+    "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "https://krinish291.github.io/images/icon.jpeg",
+            "src": "/images/icon-72X72.jpg",
+            "sizes": "72x72",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-96X96.jpg",
+            "sizes": "96x96",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-128X128.jpg",
             "sizes": "128x128",
-            "type": "image/jpeg"
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-144X144.jpg",
+            "sizes": "144x144",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-152X152.jpg",
+            "sizes": "152x152",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-192X192.jpg",
+            "sizes": "192x192",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-384X384.jpg",
+            "sizes": "384x384",
+            "type": "image/png"
+             
+        },
+        {
+            "src": "/images/icon-512X512.jpg",
+            "sizes": "512x512",
+            "type": "image/png"
+             
         }
-    ],
-    "url": "https://krinish291.github.io/"
+
+    ]
+    
 }
