@@ -3,7 +3,7 @@
     "short_name": "Krinish Radadiya",
     "display": "standalone",
     "start_url": "/index.html",
-    "background_color": "#ffe9D2",
+    "background_color": "#000000",
     "theme_color": "#e8dfec",
     "description": "",
     "orientation": "portrait-primary",
