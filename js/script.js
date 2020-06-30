@@ -1,7 +1,7 @@
 
 const countEl = document.getElementById('count');
 
-//updateVisitCount();
+updateVisitCount();
 
 function updateVisitCount() {
 	fetch('https://api.countapi.xyz/hit/krinish291.github.io/key')
