@@ -4,7 +4,7 @@
     "name": "Krinish Radadiya",
     "short_name": "Krinish Radadiya",
     "scope": "/",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "https://krinish291.github.io/",
     "background_color": "transparent",
     "theme_color": "transparent",
