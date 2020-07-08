@@ -20,9 +20,9 @@ function sendmail(){
            Username : "radadiyakrinish29@gmail.com",
            Password : "2FD125D722486A49CB300EF5BD82D9D99067",
            To : 'radadiyakrinish1999@gmail.com',
-           From :email,
+           From :"radadiyakrinish29@gmail.com",
            Subject : subject,
-           Body : msg
+           Body : "Name : " + name +" Email : " + email +  " Message : "+msg 
        }).then(
          message => alert(message)
         
