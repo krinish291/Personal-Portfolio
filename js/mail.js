@@ -6,10 +6,6 @@ function sendmail(){
     let subject=document.getElementById("subject").value;
     let email=document.getElementById("email").value;
     let msg=document.getElementById("msg").value;
-    console.log(name);
-    console.log(subject);
-    console.log(email);
-    console.log(msg);
     
     if(!name || !msg || !subject||!email){
       alert("Enter all valid Details.");
